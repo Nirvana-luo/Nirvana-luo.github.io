@@ -1,225 +1,32 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
+extends includes/layout.pug
 
-  
-  <title>15路光电教程 | wolf电控知识库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="15路光电传感器 （野狼队专属）通讯方面：可通过CAN与开发板通讯。CAN协议：光电向主控板反馈的信息：DATA[0]:代表了前8盏灯的亮灭情况。即全亮时为：0XFF 即二进制的1111 1111全灭时为： 0X00 即二进制的 0000 0000 DATA[1]:代表了后7盏灯的亮灭情况和上面说的同理 DATA[0]的最低一位表示第一个灯，最高位表示第八盏灯DATA[1]的最低一位表示第九个灯，">
-<meta property="og:type" content="article">
-<meta property="og:title" content="15路光电教程">
-<meta property="og:url" content="https://nirvana-luo.github.io/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/index.html">
-<meta property="og:site_name" content="wolf电控知识库">
-<meta property="og:description" content="15路光电传感器 （野狼队专属）通讯方面：可通过CAN与开发板通讯。CAN协议：光电向主控板反馈的信息：DATA[0]:代表了前8盏灯的亮灭情况。即全亮时为：0XFF 即二进制的1111 1111全灭时为： 0X00 即二进制的 0000 0000 DATA[1]:代表了后7盏灯的亮灭情况和上面说的同理 DATA[0]的最低一位表示第一个灯，最高位表示第八盏灯DATA[1]的最低一位表示第九个灯，">
-<meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2022-02-21T12:32:45.000Z">
-<meta property="article:modified_time" content="2022-02-21T12:35:36.093Z">
-<meta property="article:author" content="罗eason">
-<meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="wolf电控知识库" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+block content
+  #post
+    if top_img === false
+      include includes/header/post-info.pug
 
-<meta name="generator" content="Hexo 5.4.1"></head>
+    article#article-container.post-content!=page.content
+    include includes/post/post-copyright.pug
+    .tag_share
+      if (theme.post_meta.post.tags)
+        .post-meta__tag-list
+          each item, index in page.tags.data
+            a(href=url_for(item.path)).post-meta__tags #[=item.name]
+      include includes/third-party/share/index.pug
+        
+    if theme.reward.enable && theme.reward.QR_code
+      !=partial('includes/post/reward', {}, {cache: true})
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">wolf电控知识库</a>
-      </h1>
+    //- ad
+    if theme.ad && theme.ad.post
+      .ads-wrap!=theme.ad.post
+
+    if theme.post_pagination
+      include includes/pagination.pug
+    if theme.related_post && theme.related_post.enable
+      != related_posts(page,site.posts)
+
+    if page.comments !== false && theme.comments && theme.comments.use
+      - var commentsJsLoad = true
+      !=partial('includes/third-party/comments/index', {}, {cache: true})
       
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
-        
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://nirvana-luo.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main"><article id="post-15路光电教程" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/" class="article-date">
-  <time datetime="2022-02-21T12:32:45.000Z" itemprop="datePublished">2022-02-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 class="article-title" itemprop="name">
-      15路光电教程
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="15路光电传感器-（野狼队专属）"><a href="#15路光电传感器-（野狼队专属）" class="headerlink" title="15路光电传感器 （野狼队专属）"></a>15路光电传感器 （野狼队专属）</h1><h2 id="通讯方面："><a href="#通讯方面：" class="headerlink" title="通讯方面："></a>通讯方面：</h2><h3 id="可通过CAN与开发板通讯。"><a href="#可通过CAN与开发板通讯。" class="headerlink" title="可通过CAN与开发板通讯。"></a>可通过CAN与开发板通讯。</h3><p>CAN协议：<br>光电向主控板反馈的信息：<br>DATA[0]:代表了前8盏灯的亮灭情况。<br>即全亮时为：0XFF 即二进制的1111 1111<br>全灭时为： 0X00 即二进制的 0000 0000</p>
-<p>DATA[1]:代表了后7盏灯的亮灭情况<br>和上面说的同理</p>
-<p>DATA[0]的最低一位表示第一个灯，最高位表示第八盏灯<br>DATA[1]的最低一位表示第九个灯，第七位表示第15个灯，第八位一直都是0</p>
-<p>主控板不必发送数据给光电。</p>
-<p>光电校准<br>长按按键：进入模式<br>短按按键：切换模式 / 确认完成</p>
-<p>模式1：校准要识别（让灯亮）的颜色（深色or浅色），此时到要识别的颜色的平面的距离即是识别距离的最长范围。<br>模式2：不能识别的颜色（让灯灭）的颜色（深色or浅色），此时距离无所谓。<br>模式3：检测是否校准成功，校准成功灯光会放烟花。<br>校准教程：<br>长按按键，进入校准模式<br>长按按键进入模式1，开始校准，短按按键确认校准完成，再短按按键切换模式，长按按键进入模式2，，开始校准，短按按键确认校准完成，再短按按键切换模式，长按按键进入模式3，若校准成功会放烟花。</p>
-<p>4.接收协议解码（使用了共用体）</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nirvana-luo.github.io/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/" data-id="ckzwomzfr0000vgu0afgcgjee" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-    
-<nav id="article-nav">
-  
-    <a href="/2022/02/23/%E6%B5%8B%E8%AF%95/" id="article-nav-newer" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Newer</strong>
-      <div class="article-nav-title">
-        
-          (no title)
-        
-      </div>
-    </a>
-  
-  
-    <a href="/2022/02/20/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
-      <strong class="article-nav-caption">Older</strong>
-      <div class="article-nav-title">Hello World</div>
-    </a>
-  
-</nav>
-
-  
-</article>
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">二月 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/03/15/%E6%84%BF%E6%9C%9B/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/14/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/26/%E6%9C%BA%E6%A2%B0%E8%87%82%E9%80%86%E8%A7%A3/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/23/%E6%B5%8B%E8%AF%95/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/">15路光电教程</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2022 罗eason<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
