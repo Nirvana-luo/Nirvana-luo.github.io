@@ -1,397 +1,162 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8">
-  
-
-  
-  <title>wolf电控知识库</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"><title>wolf电控知识库</title><meta name="author" content="罗eason"><meta name="copyright" content="罗eason"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="#ffffff"><meta property="og:type" content="website">
 <meta property="og:title" content="wolf电控知识库">
 <meta property="og:url" content="https://nirvana-luo.github.io/index.html">
 <meta property="og:site_name" content="wolf电控知识库">
 <meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png">
 <meta property="article:author" content="罗eason">
 <meta name="twitter:card" content="summary">
-  
-    <link rel="alternate" href="/atom.xml" title="wolf电控知识库" type="application/atom+xml">
-  
-  
-    <link rel="icon" href="/favicon.png">
-  
-  
-    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
-  
-  
-<link rel="stylesheet" href="/css/style.css">
+<meta name="twitter:image" content="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png"><link rel="shortcut icon" href="/img/favicon.png"><link rel="canonical" href="https://nirvana-luo.github.io/"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6/css/all.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" media="print" onload="this.media='all'"><script>const GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: undefined,
+  translate: undefined,
+  noticeOutdate: undefined,
+  highlight: {"plugin":"highlighjs","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  relativeDate: {
+    homepage: false,
+    post: false
+  },
+  runtime: '',
+  date_suffix: {
+    just: '刚刚',
+    min: '分钟前',
+    hour: '小时前',
+    day: '天前',
+    month: '个月前'
+  },
+  copyright: undefined,
+  lightbox: 'fancybox',
+  Snackbar: undefined,
+  source: {
+    justifiedGallery: {
+      js: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.js',
+      css: 'https://cdn.jsdelivr.net/npm/flickr-justified-gallery@2/dist/fjGallery.min.css'
+    }
+  },
+  isPhotoFigcaption: false,
+  islazyload: false,
+  isAnchor: false
+}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
+  title: 'wolf电控知识库',
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isToc: false,
+  postUpdate: '2022-03-18 21:54:46'
+}</script><noscript><style type="text/css">
+  #nav {
+    opacity: 1
+  }
+  .justified-gallery img {
+    opacity: 1
+  }
 
-<meta name="generator" content="Hexo 5.4.1"></head>
+  #recent-posts time,
+  #post-meta time {
+    display: inline !important
+  }
+</style></noscript><script>(win=>{
+    win.saveToLocal = {
+      set: function setWithExpiry(key, value, ttl) {
+        if (ttl === 0) return
+        const now = new Date()
+        const expiryDay = ttl * 86400000
+        const item = {
+          value: value,
+          expiry: now.getTime() + expiryDay,
+        }
+        localStorage.setItem(key, JSON.stringify(item))
+      },
 
-<body>
-  <div id="container">
-    <div id="wrap">
-      <header id="header">
-  <div id="banner"></div>
-  <div id="header-outer" class="outer">
-    <div id="header-title" class="inner">
-      <h1 id="logo-wrap">
-        <a href="/" id="logo">wolf电控知识库</a>
-      </h1>
-      
-    </div>
-    <div id="header-inner" class="inner">
-      <nav id="main-nav">
-        <a id="main-nav-toggle" class="nav-icon"></a>
+      get: function getWithExpiry(key) {
+        const itemStr = localStorage.getItem(key)
+
+        if (!itemStr) {
+          return undefined
+        }
+        const item = JSON.parse(itemStr)
+        const now = new Date()
+
+        if (now.getTime() > item.expiry) {
+          localStorage.removeItem(key)
+          return undefined
+        }
+        return item.value
+      }
+    }
+  
+    win.getScript = url => new Promise((resolve, reject) => {
+      const script = document.createElement('script')
+      script.src = url
+      script.async = true
+      script.onerror = reject
+      script.onload = script.onreadystatechange = function() {
+        const loadState = this.readyState
+        if (loadState && loadState !== 'loaded' && loadState !== 'complete') return
+        script.onload = script.onreadystatechange = null
+        resolve()
+      }
+      document.head.appendChild(script)
+    })
+  
+      win.activateDarkMode = function () {
+        document.documentElement.setAttribute('data-theme', 'dark')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
+        }
+      }
+      win.activateLightMode = function () {
+        document.documentElement.setAttribute('data-theme', 'light')
+        if (document.querySelector('meta[name="theme-color"]') !== null) {
+          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#ffffff')
+        }
+      }
+      const t = saveToLocal.get('theme')
+    
+          if (t === 'dark') activateDarkMode()
+          else if (t === 'light') activateLightMode()
         
-          <a class="main-nav-link" href="/">Home</a>
-        
-          <a class="main-nav-link" href="/archives">Archives</a>
-        
-      </nav>
-      <nav id="sub-nav">
-        
-          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
-        
-        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
-      </nav>
-      <div id="search-form-wrap">
-        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="https://nirvana-luo.github.io"></form>
-      </div>
-    </div>
-  </div>
-</header>
-      <div class="outer">
-        <section id="main">
-  
-    <article id="post-愿望" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/03/15/%E6%84%BF%E6%9C%9B/" class="article-date">
-  <time datetime="2022-03-15T06:33:01.382Z" itemprop="datePublished">2022-03-15</time>
-</a>
+      const asideStatus = saveToLocal.get('aside-status')
+      if (asideStatus !== undefined) {
+        if (asideStatus === 'hide') {
+          document.documentElement.classList.add('hide-aside')
+        } else {
+          document.documentElement.classList.remove('hide-aside')
+        }
+      }
     
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h2 id="再上一次国赛，再次以往无前"><a href="#再上一次国赛，再次以往无前" class="headerlink" title="再上一次国赛，再次以往无前"></a>再上一次国赛，再次以往无前</h2>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nirvana-luo.github.io/2022/03/15/%E6%84%BF%E6%9C%9B/" data-id="cl0w6hhq60001c4u030ej20sn" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+    const detectApple = () => {
+      if(/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)){
+        document.documentElement.classList.add('apple')
+      }
+    }
+    detectApple()
+    })(window)</script><meta name="generator" content="Hexo 5.4.1"></head><body><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img is-center"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="sidebar-site-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><hr/></div></div><div class="page" id="body-wrap"><header class="full_page" id="page-header"><nav id="nav"><span id="blog_name"><a id="site-name" href="/">wolf电控知识库</a></span><div id="menus"><div id="toggle-menu"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></div></div></nav><div id="site-info"><h1 id="site-title">wolf电控知识库</h1></div><div id="scroll-down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left"><a href="/2022/03/15/%E6%84%BF%E6%9C%9B/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/15/%E6%84%BF%E6%9C%9B/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-15T06:33:01.382Z" title="发表于 2022-03-15 14:33:01">2022-03-15</time></span></div><div class="content">再上一次国赛，再次以往无前</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/03/14/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/03/14/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-03-14T14:03:32.485Z" title="发表于 2022-03-14 22:03:32">2022-03-14</time></span></div><div class="content">hfuioehqwu
+</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/02/26/%E6%9C%BA%E6%A2%B0%E8%87%82%E9%80%86%E8%A7%A3/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/26/%E6%9C%BA%E6%A2%B0%E8%87%82%E9%80%86%E8%A7%A3/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-26T05:42:04.817Z" title="发表于 2022-02-26 13:42:04">2022-02-26</time></span></div><div class="content">计算机器人运动学逆解首先要考虑可解性(solvability)，即考虑无解、多解等情况。在机器人工作空间外的目标点显然是无解的。对于多解的情况从下面的例子可以看出平面二杆机械臂（两个关节可以360°旋转）在工作空间内存在两个解：
+　　如果逆运动学有多个解，那么控制程序在运行时就必须选择其中一个解，然后发给驱动器驱动机器人关节旋转或平移。如何选择合适的解有许多不同的准则，其中一种比较合理的方法就是选择“最近”的解（the closest solution）。如下图所示，如果机器人在A点，并期望运动到B点，合理的解是关节运动量最小的那一个（A good choice would be the solution that minimizes the amount that each joint is required to move）。因此在不存在障碍物的情况下，上面的虚线构型会被选为逆解。在计算逆解时我们可以考虑将当前位置作为输入参数，这样我们就可以选择关节空间中离当前位置最近的解。
+　　这个“最近”有多种定义方式。比如对于典型的6自由度关节型机器人来说，其前三个关节较大，后三个关节较小。 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/02/23/%E6%B5%8B%E8%AF%95/" title="无题"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/23/%E6%B5%8B%E8%AF%95/" title="无题">无题</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-23T05:26:27.041Z" title="发表于 2022-02-23 13:26:27">2022-02-23</time></span></div><div class="content">浩宝的帅照（测试）texttexttext</div></div></div><div class="recent-post-item"><div class="post_cover left"><a href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/" title="15路光电教程"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="15路光电教程"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/" title="15路光电教程">15路光电教程</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-21T12:32:45.000Z" title="发表于 2022-02-21 20:32:45">2022-02-21</time></span></div><div class="content">15路光电传感器 （野狼队专属）通讯方面：可通过CAN与开发板通讯。CAN协议：光电向主控板反馈的信息：DATA[0]:代表了前8盏灯的亮灭情况。即全亮时为：0XFF 即二进制的1111 1111全灭时为： 0X00 即二进制的 0000 0000
+DATA[1]:代表了后7盏灯的亮灭情况和上面说的同理
+DATA[0]的最低一位表示第一个灯，最高位表示第八盏灯DATA[1]的最低一位表示第九个灯，第七位表示第15个灯，第八位一直都是0
+主控板不必发送数据给光电。
+光电校准长按按键：进入模式短按按键：切换模式 / 确认完成
+模式1：校准要识别（让灯亮）的颜色（深色or浅色），此时到要识别的颜色的平面的距离即是识别距离的最长范围。模式2：不能识别的颜色（让灯灭）的颜色（深色or浅色），此时距离无所谓。模式3：检测是否校准成功，校准成功灯光会放烟花。校准教程：长按按键，进入校准模式长按按键进入模式1，开始校准，短按按键确认校准完成，再短按按键切换模式，长按按键进入模式2，，开始校准，短按按键确认校准完成，再短按按键切换模式，长按按键进入模式3，若校准成功会放烟花。
+4.接收协议解码（使用了共 ...</div></div></div><div class="recent-post-item"><div class="post_cover right"><a href="/2022/02/20/hello-world/" title="Hello World"><img class="post_bg" src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="Hello World"></a></div><div class="recent-post-info"><a class="article-title" href="/2022/02/20/hello-world/" title="Hello World">Hello World</a><div class="article-meta-wrap"><span class="post-meta-date"><i class="far fa-calendar-alt"></i><span class="article-meta-label">发表于</span><time datetime="2022-02-20T11:58:09.443Z" title="发表于 2022-02-20 19:58:09">2022-02-20</time></span></div><div class="content">Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub.
+Quick StartCreate a new post1$ hexo new &quot;My New Post&quot;
 
+More info: Writing
+Run server1$ hexo server
 
-  
-    <article id="post-新建文本文档" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/03/14/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" class="article-date">
-  <time datetime="2022-03-14T14:03:32.485Z" itemprop="datePublished">2022-03-14</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>hfuioehqwu</p>
+More info: Server
+Generate static files1$ hexo generate
 
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nirvana-luo.github.io/2022/03/14/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" data-id="cl0w6hhq90003c4u02jbf9sky" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
+More info: Generating
+Deploy to remote sites1$ hexo deploy
 
-
-  
-    <article id="post-机械臂逆解" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/02/26/%E6%9C%BA%E6%A2%B0%E8%87%82%E9%80%86%E8%A7%A3/" class="article-date">
-  <time datetime="2022-02-26T05:42:04.817Z" itemprop="datePublished">2022-02-26</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>计算机器人运动学逆解首先要考虑可解性(solvability)，即考虑无解、多解等情况。在机器人工作空间外的目标点显然是无解的。对于多解的情况从下面的例子可以看出平面二杆机械臂（两个关节可以360°旋转）在工作空间内存在两个解：</p>
-<p>　　如果逆运动学有多个解，那么控制程序在运行时就必须选择其中一个解，然后发给驱动器驱动机器人关节旋转或平移。如何选择合适的解有许多不同的准则，其中一种比较合理的方法就是选择“最近”的解（the closest solution）。如下图所示，如果机器人在A点，并期望运动到B点，合理的解是关节运动量最小的那一个（A good choice would be the solution that minimizes the amount that each joint is required to move）。因此在不存在障碍物的情况下，上面的虚线构型会被选为逆解。在计算逆解时我们可以考虑将当前位置作为输入参数，这样我们就可以选择关节空间中离当前位置最近的解。</p>
-<p>　　这个“最近”有多种定义方式。比如对于典型的6自由度关节型机器人来说，其前三个关节较大，后三个关节较小。因此在定义关节空间内的距离远近时要考虑给不同关节赋予不同的权重，比如前三个关节设置大权重，后三个关节设置小权重。那么在选择解的时候会优先考虑移动较小的关节而非移动大关节。而当存在障碍物时，“最近”的解的运动路径会与其发生碰撞，这时就要选择另一个运动距离较远的解（”farther” solution）。因此在考虑碰撞、路径规划等问题时我们需要计算出可能存在的全部解。</p>
-<p>　　逆解个数取决于机器人关节数目（the number of joints）、机器人的构型（link parameters）以及关节运动范围(the allowable ranges of motion of the joints)。决定机器人构型的D-H参数表中的非零值越多，就有越多的解存在。对于通用型6轴转动关节的机械臂来说，最多可能存在16个不同的解。下图展示了最大解的数量与非零值的连杆长度参数$a$（两关节转轴之间的最短距离，即两轴线之间公垂线的长度）的数量之间的关系：</p>
-<p>　　另外机器人逆运动学求解也有多种方法，一般分为两类：封闭解（closed-form solutions）和数值解（numerical solutions）。不同学者对同一机器人的运动学逆解也提出不同的解法。应该从计算方法的计算效率、计算精度等要求出发，选择较好的解法。通常来说数值迭代解法比计算封闭解的解析表达式更慢、更耗时，因此在设计机器人的构型时就要考虑封闭解的存在性。</p>
-<p> 　　求解逆运动学方程的解析解（给出解的具体函数形式，从解的表达式中就可以算出任何对应值）时主要采用代数法（Algebraic solution）或几何法（Geometric solution）。下面我们先用代数法来计算平面二连杆机械臂的运动学逆解（不考虑末端关节的旋转）。正向运动学很容易得到：</p>
-<p>　　将上面方程两边取平方再相加得到$x^2+y^2=l_1^2+l_2^2+2l_1l_2c_2$，消除$\theta_1$。这里用到了三角函数的和差角公式：</p>
-<p>　　可以求得$\cos\theta_2$：</p>
-<p>　　为了使解存在，上式的值必须在-1~1之间，因为余弦函数$\cos x$的取值范围就是$[-1,1]$。在计算逆解时需要检查这一条件，当不满足时说明目标位置已经位于工作空间之外（the goal point is too far away for the manipulator to reach）。当目标位置$(x,y)$位于工作空间内时可以求得$\sin\theta_2$：</p>
-<p>　　为了计算$\theta_2$，可以使用Atan2函数，即：</p>
-<p>　　注意对于tan(θ) = y / x ，两种反正切函数的区别是：θ = ATan(y / x)求出的θ取值范围是$(-\frac{\pi}{2},\frac{\pi}{2})$；θ = ATan2(y, x)求出的θ取值范围是$(-\pi,\pi]$。<br>当 (x, y) 在第一象限, 0 &lt; θ &lt; PI/2</p>
-<p>当 (x, y) 在第二象限 PI/2 &lt; θ≤PI</p>
-<p>当 (x, y) 在第三象限, -PI &lt; θ &lt; -PI/2</p>
-<p>当 (x, y) 在第四象限, -PI/2 &lt; θ &lt; 0</p>
-<p>　　$s_2$的符号有两种选择，对应的我们可以选择”elbow-up”或”elbow-down”两种不同构型。求出$\theta_2$后我们可以根据正解方程再计算出$\theta_1$。将正解方程改写为</p>
-<p>　　其中</p>
-<p>　　为了求解方程对$k_1$、$k_2$进行变量替换：</p>
-<p>　　其中$r=\sqrt{k_1^2+k_2^2}$，$\gamma=Atan2(k_2,k_1)$</p>
-<p>　　于是正解方程可写为：</p>
-<p>　　因此有：</p>
-<p>　　使用Atan2函数可得到：$\gamma+\theta_1=Atan2(y,x)$</p>
-<p>　　于是第一个关节的转角$\theta_1$为：　　注意之前在求解$\theta_2$时对$s_2$的符号进行了选择，这会引起$k_2$符号的变化，并影响$\theta_1$的求解。另外当x=y=0时，函数Atan2是未定义的状态，这种情况下$\theta_1$可以任意取值。</p>
-<p>Geometric solution<br>　　根据机构平面图，由$L_1$、$L_2$以及原点与末端之间的连线构成的三角形的余弦定理可求得$\theta_2$：</p>
-<p>　　由于$\cos(180^{\circ}+\theta_2)=-\cos(\theta_2)$，可解得：</p>
-<p>　　为了保证三角形存在（三角形两边之和大于第三边），即$\sqrt{x^2+y^2}$必须小于或等于连杆长度之和$l_1+l_2$。在求逆解时需要验证是否满足这一条件，判断解的存在性。另一个可能的解（虚线所示）与之对称，$\theta_2’=-\theta_2$</p>
-<p>　　为了计算$\theta_1$，先求出图中的$\beta$和$\psi$角。$\beta$可能位于坐标系四象限中的任一象限，取决于$x$和$y$的符号，因此使用Atan2函数来求解：$\beta=Atan2(y,x)$</p>
-<p>　　对$\psi$用余弦定理来计算：</p>
-<p>　　于是</p>
-<p>　　当$\theta_2&lt;0$时取正号，$\theta_2&gt;0$时取负号</p>
-<p> 　　编写Mathematica代码进行平面二杆机械臂运动模拟，使用Locator来改变工作空间中机械臂末端的目标位置。</p>
-<p>Pieper’s solution when three axes intersect<br> 　　机器人运动学中的Pieper准则是：机器人的三个相邻关节轴交于一点或三轴线平行。</p>
-<p>　　对于6自由度的机器人来说，运动学反解非常复杂，一般没有封闭解。在应用D-H法建立运动学方程的基础上，进行一定的解析计算后发现，位置反解往往有很多个，不能得到有效地封闭解。Pieper方法就是在此基础上进行研究发现，如果机器人满足两个充分条件中的一个，就会得到封闭解，这两个条件是：<br>　　（1）三个相邻关节轴相交于一点<br>　　（2）三个相邻关节轴相互平行（在无限远处交于一点）<br>　　现在的大多数商品化机器人都满足封闭解的两个充分条件之一。如PUMA和STANFORD机器人满足第一条件，而ASEA和MINIMOVER机器人满足第二条件。以PUMA560机器人为例，它的最后3个关节轴相交于一点。</p>
-<p> 　　下面考虑6自由度转动关节机器人最后三根轴交于一点的情况。根据D-H参数坐标系建立方法，这种情况下杆件坐标系{4}、{5}、{6}的原点将位于三根轴线的交汇点。该点在机器人基座标系中的齐次坐标可表示为：　　或者根据相邻杆件坐标系之间的变换关系：　　可以得到：　　或：　　其中：　　将参数带入$<em>{i}^{i-1}T$矩阵得到$</em>{3}^{2}T$，可以列出$f_1$、$f_2$、$f_3$的表达式：　　再根据 $<em>{1}^{0}T$和 $</em>{2}^{1}T$我们可以得到　　其中　　接下来我们计算$^0P_{4ORG}$坐标的平方和：　　根据方程(8)有：　　再接着进行变量替换消除对关节转角$\theta_1$的依赖，令：　　其中：　　下面考虑根据方程(11)求解$\theta_3$，分下面3种情况：</p>
-<p>　　1. 如果$a_1=0$，则$r=k_3$，由于$r$是已知量，等式右边的$k_3$是$\theta_3$的函数。用三角函数万能公式进行变量替换后可求解$\theta_3$　　</p>
-<p>　　2. 如果$s\alpha_1=0$，则$z=k_4$，由于$z$已知，进行变量替换后可求出$\theta_3$</p>
-<p>　　3. 如果条件1、2不成立，则从公式(11)中消除$s_2$和$c_2$，得到：　　对方程(13)进行变量替换后可求解$\theta_3$，之后可根据方程(11)求解$\theta_2$，根据方程(7)求解$\theta_1$。</p>
-<p>　　最后还需要求解$\theta_4$、$\theta_5$、$\theta_6$。机械臂最后三个关节的轴线交于一点，这三个关节的转角会影响末端姿态，可以从代表末端姿态的旋转矩阵$_6^0R$中求解出$\theta_4$、$\theta_5$、$\theta_6$。在之前求解得到$\theta_1$、$\theta_2$、$\theta_3$后我们可以计算出矩阵$<em>4^0R|</em>{\theta_4=0}$，表示$\theta_4=0$时杆件坐标系{4}相对于基坐标系的姿态。从坐标系{4}到末端坐标系{6}的姿态变化由最后三根轴决定，写成矩阵变换的形式如下：　　已知$<em>6^4R|</em>{\theta_4=0}$后最后三个关节转角可根据欧拉角与旋转矩阵之间的关系计算出来。</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nirvana-luo.github.io/2022/02/26/%E6%9C%BA%E6%A2%B0%E8%87%82%E9%80%86%E8%A7%A3/" data-id="cl0w6hhqa0004c4u005xk93tz" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-测试" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/02/23/%E6%B5%8B%E8%AF%95/" class="article-date">
-  <time datetime="2022-02-23T05:26:27.041Z" itemprop="datePublished">2022-02-23</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="浩宝的帅照（测试）"><a href="#浩宝的帅照（测试）" class="headerlink" title="浩宝的帅照（测试）"></a>浩宝的帅照（测试）</h1><h2 id="text"><a href="#text" class="headerlink" title="text"></a>text</h2><h3 id="text-1"><a href="#text-1" class="headerlink" title="text"></a>text</h3><h4 id="text-2"><a href="#text-2" class="headerlink" title="text"></a>text</h4>
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nirvana-luo.github.io/2022/02/23/%E6%B5%8B%E8%AF%95/" data-id="cl0w6hhqc0005c4u097n4ctso" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-15路光电教程" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/" class="article-date">
-  <time datetime="2022-02-21T12:32:45.000Z" itemprop="datePublished">2022-02-21</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/">15路光电教程</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <h1 id="15路光电传感器-（野狼队专属）"><a href="#15路光电传感器-（野狼队专属）" class="headerlink" title="15路光电传感器 （野狼队专属）"></a>15路光电传感器 （野狼队专属）</h1><h2 id="通讯方面："><a href="#通讯方面：" class="headerlink" title="通讯方面："></a>通讯方面：</h2><h3 id="可通过CAN与开发板通讯。"><a href="#可通过CAN与开发板通讯。" class="headerlink" title="可通过CAN与开发板通讯。"></a>可通过CAN与开发板通讯。</h3><p>CAN协议：<br>光电向主控板反馈的信息：<br>DATA[0]:代表了前8盏灯的亮灭情况。<br>即全亮时为：0XFF 即二进制的1111 1111<br>全灭时为： 0X00 即二进制的 0000 0000</p>
-<p>DATA[1]:代表了后7盏灯的亮灭情况<br>和上面说的同理</p>
-<p>DATA[0]的最低一位表示第一个灯，最高位表示第八盏灯<br>DATA[1]的最低一位表示第九个灯，第七位表示第15个灯，第八位一直都是0</p>
-<p>主控板不必发送数据给光电。</p>
-<p>光电校准<br>长按按键：进入模式<br>短按按键：切换模式 / 确认完成</p>
-<p>模式1：校准要识别（让灯亮）的颜色（深色or浅色），此时到要识别的颜色的平面的距离即是识别距离的最长范围。<br>模式2：不能识别的颜色（让灯灭）的颜色（深色or浅色），此时距离无所谓。<br>模式3：检测是否校准成功，校准成功灯光会放烟花。<br>校准教程：<br>长按按键，进入校准模式<br>长按按键进入模式1，开始校准，短按按键确认校准完成，再短按按键切换模式，长按按键进入模式2，，开始校准，短按按键确认校准完成，再短按按键切换模式，长按按键进入模式3，若校准成功会放烟花。</p>
-<p>4.接收协议解码（使用了共用体）</p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nirvana-luo.github.io/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/" data-id="cl0w6hhq80002c4u0dfo0e5j3" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-    <article id="post-hello-world" class="article article-type-post" itemscope itemprop="blogPost">
-  <div class="article-meta">
-    <a href="/2022/02/20/hello-world/" class="article-date">
-  <time datetime="2022-02-20T11:58:09.443Z" itemprop="datePublished">2022-02-20</time>
-</a>
-    
-  </div>
-  <div class="article-inner">
-    
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2022/02/20/hello-world/">Hello World</a>
-    </h1>
-  
-
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-      
-    </div>
-    <footer class="article-footer">
-      <a data-url="https://nirvana-luo.github.io/2022/02/20/hello-world/" data-id="cl0w6hhpy0000c4u0h3vf3xeu" class="article-share-link">Share</a>
-      
-      
-    </footer>
-  </div>
-  
-</article>
-
-
-  
-
-
-</section>
-        
-          <aside id="sidebar">
-  
-    
-
-  
-    
-
-  
-    
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">归档</h3>
-    <div class="widget">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/03/">三月 2022</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2022/02/">二月 2022</a></li></ul>
-    </div>
-  </div>
-
-
-  
-    
-  <div class="widget-wrap">
-    <h3 class="widget-title">最新文章</h3>
-    <div class="widget">
-      <ul>
-        
-          <li>
-            <a href="/2022/03/15/%E6%84%BF%E6%9C%9B/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/03/14/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/26/%E6%9C%BA%E6%A2%B0%E8%87%82%E9%80%86%E8%A7%A3/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/23/%E6%B5%8B%E8%AF%95/">(no title)</a>
-          </li>
-        
-          <li>
-            <a href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/">15路光电教程</a>
-          </li>
-        
-      </ul>
-    </div>
-  </div>
-
-  
-</aside>
-        
-      </div>
-      <footer id="footer">
-  
-  <div class="outer">
-    <div id="footer-info" class="inner">
-      &copy; 2022 罗eason<br>
-      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
-    </div>
-  </div>
-</footer>
-    </div>
-    <nav id="mobile-nav">
-  
-    <a href="/" class="mobile-nav-link">Home</a>
-  
-    <a href="/archives" class="mobile-nav-link">Archives</a>
-  
-</nav>
-    
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
-
-
-  
-<link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
-
-  
-<script src="/fancybox/jquery.fancybox.pack.js"></script>
-
-
-
-
-<script src="/js/script.js"></script>
-
-
-
-
-  </div>
-</body>
-</html>
+More info: Deployment
+</div></div></div><nav id="pagination"><div class="pagination"><span class="page-number current">1</span></div></nav></div><div class="aside-content" id="aside-content"><div class="card-widget card-info"><div class="is-center"><div class="avatar-img"><img src="https://i.loli.net/2021/02/24/5O1day2nriDzjSu.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info__name">罗eason</div><div class="author-info__description"></div></div><div class="card-info-data site-data is-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">6</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">0</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">0</div></a></div><a id="card-info-btn" target="_blank" rel="noopener" href="https://github.com/xxxxxx"><i class="fab fa-github"></i><span>Follow Me</span></a></div><div class="card-widget card-announcement"><div class="item-headline"><i class="fas fa-bullhorn fa-shake"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item"><a class="thumbnail" href="/2022/03/15/%E6%84%BF%E6%9C%9B/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/03/15/%E6%84%BF%E6%9C%9B/" title="无题">无题</a><time datetime="2022-03-15T06:33:01.382Z" title="发表于 2022-03-15 14:33:01">2022-03-15</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/03/14/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/03/14/%E6%96%B0%E5%BB%BA%E6%96%87%E6%9C%AC%E6%96%87%E6%A1%A3/" title="无题">无题</a><time datetime="2022-03-14T14:03:32.485Z" title="发表于 2022-03-14 22:03:32">2022-03-14</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/26/%E6%9C%BA%E6%A2%B0%E8%87%82%E9%80%86%E8%A7%A3/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/02/26/%E6%9C%BA%E6%A2%B0%E8%87%82%E9%80%86%E8%A7%A3/" title="无题">无题</a><time datetime="2022-02-26T05:42:04.817Z" title="发表于 2022-02-26 13:42:04">2022-02-26</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/23/%E6%B5%8B%E8%AF%95/" title="无题"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="无题"/></a><div class="content"><a class="title" href="/2022/02/23/%E6%B5%8B%E8%AF%95/" title="无题">无题</a><time datetime="2022-02-23T05:26:27.041Z" title="发表于 2022-02-23 13:26:27">2022-02-23</time></div></div><div class="aside-list-item"><a class="thumbnail" href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/" title="15路光电教程"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7" onerror="this.onerror=null;this.src='/img/404.jpg'" alt="15路光电教程"/></a><div class="content"><a class="title" href="/2022/02/21/15%E8%B7%AF%E5%85%89%E7%94%B5%E6%95%99%E7%A8%8B/" title="15路光电教程">15路光电教程</a><time datetime="2022-02-21T12:32:45.000Z" title="发表于 2022-02-21 20:32:45">2022-02-21</time></div></div></div></div><div class="card-widget card-archives"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/03/"><span class="card-archive-list-date">三月 2022</span><span class="card-archive-list-count">2</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2022/02/"><span class="card-archive-list-date">二月 2022</span><span class="card-archive-list-count">4</span></a></li></ul></div><div class="card-widget card-webinfo"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="item-name">文章数目 :</div><div class="item-count">6</div></div><div class="webinfo-item"><div class="item-name">本站访客数 :</div><div class="item-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="item-name">本站总访问量 :</div><div class="item-count" id="busuanzi_value_site_pv"></div></div><div class="webinfo-item"><div class="item-name">最后更新时间 :</div><div class="item-count" id="last-push-date" data-lastPushDate="2022-03-18T13:54:46.506Z"></div></div></div></div></div></div></main><footer id="footer"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2022 By 罗eason</div><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="darkmode" type="button" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside_config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><button id="go-up" type="button" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.umd.js"></script><div class="js-pjax"></div><script async data-pjax src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script></div></body></html>
